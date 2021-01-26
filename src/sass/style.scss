@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import 'libs/bootstrap-reboot.min';
+
+* {
+    font-family: Roboto, sans-serif;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: minmax(150px , 20%) 1fr;
+    
+}
+.grid-item {
+    position: relative;
+    max-width: 300px;
+}
+
+.nav {
+    max-width: inherit;
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid rgba(0, 22, 22, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    &-title {
+        font-size: 30px;
+        text-align: left;
+        padding: 15px;
+        padding-left: 35px;
+    }
+    &-list {
+        list-style-type: none;
+        padding-left: 0px;
+        height: 80%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        li {
+            
+            border-top: 1px solid rgba(0, 22, 22, 0.4);;
+            padding: 15px;
+        }
+        
+    }
+    &-link {
+        text-decoration: none;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        padding-left: 30px;
+        color: black;;
+    }
+}
+
+.main {
+    padding: 20px 0 20px 20px;
+    &-title {
+        color:  #4d4e53;;
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    &-list {
+        padding-left: 60px;
+        margin-top: 20px;
+        li {
+            margin-top: 15px;
+        }
+    }
+    &-text {
+        font-weight: 400;
+    }
+    &-code {
+        display: block;
+        padding: 15px 0 15px 70px;
+        white-space: pre-line;
+        line-height: 2;
+        margin: 10px;
+        font-size: 14px;
+    }
+}
+
+@import '_media.scss';
